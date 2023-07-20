@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+body {
+   background-image: linear-gradient(45deg, blue, red);
+   background-repeat: no-repeat;
+   padding: 0;
+   margin: 0 auto;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow-x: hidden;
+}
+
+.app {
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 9.5rem 0;
+}
+
+.buttonGroup,
+.date,
+.interval {
+   width: 90%;
+   margin: 1rem 0;
+   background: #000;
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   font-size: 30px;
+   padding: 20px 10px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   color: #fff;
+   flex-wrap: wrap;
+   border-radius: 10px;
+}
+
+.date div {
+   width: 300px;
+   padding: 1rem 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.date span {
+   font-size: 32px;
+   color: #aa4bbd;
+   padding: 0 5px;
+   margin-top: -1rem;
+}
+
+.date .term {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.date .count {
+   color: #a5a5a5;
+}
+
+
+.date .name {
+   color: #555555;
+   font-size: 16px;
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #3b3b3b;
+}
+
+.buttonGroup div {
+   margin: 2rem;
+}
+
+.buttonGroup button {
+   padding: 10px 20px;
+   font-size: 25px;
+}
+
+.buttonGroup {
+   justify-content: flex-start;
+   margin: 3rem 0;
+}
+
+.interval {
+   color: #a5a5a5;
+   display: block;
+   flex-direction: column;
+}
+
+.interval div {
+   display: flex;
+   padding-left: 3rem;
+}
+
+.interval h1 {
+   padding-left: 1.8rem;
+}
+
+@media screen and (max-width:800px) {
+
+   body {
+      height: 100% !important;
+      padding: 2rem 0;
+   }
+
+   .date {
+      flex-direction: column;
+   }
+
+   .buttonGroup div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+
+   .buttonGroup button {
+      width: 90%;
+   }
+}
